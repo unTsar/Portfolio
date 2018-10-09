@@ -297,23 +297,23 @@ body {
       -webkit-background-size: cover;
               background-size: cover;
       background-repeat: no-repeat; }
-  body .container-fluid .wGet, body .container-fluid .wFace, body .container-fluid .popFeatures, body .container-fluid .dataCol, body .container-fluid .count, body .container-fluid .princeOp, body .container-fluid .reports, body .container-fluid .qq, body .container-fluid .advs, body .container-fluid .clients, body .container-fluid .partners {
+  body .container-fluid .wGet, body .container-fluid .wFace, body .container-fluid .popFeatures, body .container-fluid .dataCol, body .container-fluid .princeOp, body .container-fluid .reports, body .container-fluid .qq, body .container-fluid .advs, body .container-fluid .clients, body .container-fluid .partners {
     text-align: center; }
-    body .container-fluid .wGet .head, body .container-fluid .wFace .head, body .container-fluid .popFeatures .head, body .container-fluid .dataCol .head, body .container-fluid .count .head, body .container-fluid .princeOp .head, body .container-fluid .reports .head, body .container-fluid .qq .head, body .container-fluid .advs .head, body .container-fluid .clients .head, body .container-fluid .partners .head {
+    body .container-fluid .wGet .head, body .container-fluid .wFace .head, body .container-fluid .popFeatures .head, body .container-fluid .dataCol .head, body .container-fluid .princeOp .head, body .container-fluid .reports .head, body .container-fluid .qq .head, body .container-fluid .advs .head, body .container-fluid .clients .head, body .container-fluid .partners .head {
       margin-top: 100px;
       margin-bottom: 35px; }
-      body .container-fluid .wGet .head .line, body .container-fluid .wGet .head h2, body .container-fluid .wFace .head .line, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head .line, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head .line, body .container-fluid .dataCol .head h2, body .container-fluid .count .head .line, body .container-fluid .count .head h2, body .container-fluid .princeOp .head .line, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head .line, body .container-fluid .reports .head h2, body .container-fluid .qq .head .line, body .container-fluid .qq .head h2, body .container-fluid .advs .head .line, body .container-fluid .advs .head h2, body .container-fluid .clients .head .line, body .container-fluid .clients .head h2, body .container-fluid .partners .head .line, body .container-fluid .partners .head h2 {
+      body .container-fluid .wGet .head .line, body .container-fluid .wGet .head h2, body .container-fluid .wFace .head .line, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head .line, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head .line, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head .line, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head .line, body .container-fluid .reports .head h2, body .container-fluid .qq .head .line, body .container-fluid .qq .head h2, body .container-fluid .advs .head .line, body .container-fluid .advs .head h2, body .container-fluid .clients .head .line, body .container-fluid .clients .head h2, body .container-fluid .partners .head .line, body .container-fluid .partners .head h2 {
         display: inline-block;
         vertical-align: middle; }
-      body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .count .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+      body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
         text-transform: uppercase;
         font-family: 'Oswald-Bold';
         font-size: 30px;
         color: #393a37; }
-        body .container-fluid .wGet .head h2 b, body .container-fluid .wFace .head h2 b, body .container-fluid .popFeatures .head h2 b, body .container-fluid .dataCol .head h2 b, body .container-fluid .count .head h2 b, body .container-fluid .princeOp .head h2 b, body .container-fluid .reports .head h2 b, body .container-fluid .qq .head h2 b, body .container-fluid .advs .head h2 b, body .container-fluid .clients .head h2 b, body .container-fluid .partners .head h2 b {
+        body .container-fluid .wGet .head h2 b, body .container-fluid .wFace .head h2 b, body .container-fluid .popFeatures .head h2 b, body .container-fluid .dataCol .head h2 b, body .container-fluid .princeOp .head h2 b, body .container-fluid .reports .head h2 b, body .container-fluid .qq .head h2 b, body .container-fluid .advs .head h2 b, body .container-fluid .clients .head h2 b, body .container-fluid .partners .head h2 b {
           font-weight: normal;
           color: #d30d2e; }
-      body .container-fluid .wGet .head .line, body .container-fluid .wFace .head .line, body .container-fluid .popFeatures .head .line, body .container-fluid .dataCol .head .line, body .container-fluid .count .head .line, body .container-fluid .princeOp .head .line, body .container-fluid .reports .head .line, body .container-fluid .qq .head .line, body .container-fluid .advs .head .line, body .container-fluid .clients .head .line, body .container-fluid .partners .head .line {
+      body .container-fluid .wGet .head .line, body .container-fluid .wFace .head .line, body .container-fluid .popFeatures .head .line, body .container-fluid .dataCol .head .line, body .container-fluid .princeOp .head .line, body .container-fluid .reports .head .line, body .container-fluid .qq .head .line, body .container-fluid .advs .head .line, body .container-fluid .clients .head .line, body .container-fluid .partners .head .line {
         background-color: #d30d2e;
         width: 35px;
         height: 2px;
@@ -625,10 +625,10 @@ body {
         background-color: white; }
     body .container-fluid .advs .container .row {
       margin-top: 50px; }
-      body .container-fluid .advs .container .row .col-3 .plaine {
+      body .container-fluid .advs .container .row .col-3 .plaine, body .container-fluid .advs .container .row .col-4 .plaine {
         background-color: white;
         padding: 10px; }
-        body .container-fluid .advs .container .row .col-3 .plaine .content {
+        body .container-fluid .advs .container .row .col-3 .plaine .content, body .container-fluid .advs .container .row .col-4 .plaine .content {
           text-align: left;
           padding-left: 20px;
           display: grid;
@@ -640,51 +640,88 @@ body {
           border-width: 1px;
           border-color: #5ca3cf;
           border-style: solid;
-          height: 165px; }
-          body .container-fluid .advs .container .row .col-3 .plaine .content img {
+          height: 125px; }
+          body .container-fluid .advs .container .row .col-3 .plaine .content img, body .container-fluid .advs .container .row .col-4 .plaine .content img {
             height: 50px; }
-          body .container-fluid .advs .container .row .col-3 .plaine .content span {
+          body .container-fluid .advs .container .row .col-3 .plaine .content span, body .container-fluid .advs .container .row .col-4 .plaine .content span {
             padding-left: 30px;
             padding-right: 30px;
             font-family: 'Oswald-Medium';
             font-size: 18px;
             color: #303030; }
-      body .container-fluid .advs .container .row .ml-auto {
-        margin-left: auto; }
-      body .container-fluid .advs .container .row .mr-auto {
-        margin-right: auto; }
+  body .container-fluid .clients .carousel .csl-nav, body .container-fluid .partners .carousel .csl-nav {
+    cursor: pointer;
+    z-index: 11;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute; }
+  body .container-fluid .clients .carousel .csl-prev, body .container-fluid .partners .carousel .csl-prev {
+    left: -60px; }
+  body .container-fluid .clients .carousel .csl-next, body .container-fluid .partners .carousel .csl-next {
+    right: -60px; }
   body .container-fluid .clients {
-    padding-bottom: 50px; }
-    body .container-fluid .clients .plaine {
-      padding-right: 25px;
-      padding-left: 30px;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin: 0 auto;
-      background-color: white;
-      border-width: 1px;
-      border-color: #aaaaaa;
-      border-style: solid;
-      width: 1000px;
-      height: 255px; }
-      body .container-fluid .clients .plaine img.log {
-        width: 200px; }
-      body .container-fluid .clients .plaine img.play {
-        width: 175px; }
-      body .container-fluid .clients .plaine .text {
-        padding-left: 25px;
-        text-align: left;
-        font-family: 'Oswald-Light';
-        font-size: 22px;
-        color: #303030; }
-        body .container-fluid .clients .plaine .text b {
-          font-family: 'Oswald-Medium';
+    padding-bottom: 150px; }
+    body .container-fluid .clients .carousel {
+      position: relative; }
+      body .container-fluid .clients .carousel .owl1 .owl-dots {
+        margin-top: 35px; }
+        body .container-fluid .clients .carousel .owl1 .owl-dots .owl-dot {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          cursor: pointer;
+          margin-right: 5px;
+          width: 35px;
+          height: 35px;
+          background-color: white;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          font-family: 'Oswald-Light';
+          font-size: 20px;
+          color: #303030; }
+          body .container-fluid .clients .carousel .owl1 .owl-dots .owl-dot span {
+            background: none;
+            margin: 0;
+            width: auto;
+            height: auto;
+            -webkit-border-radius: 0px;
+                    border-radius: 0px; }
+        body .container-fluid .clients .carousel .owl1 .owl-dots .active {
+          -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2);
+                  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2); }
+      body .container-fluid .clients .carousel .owl1 .plaine {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-right: 25px;
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: white;
+        border-width: 1px;
+        border-color: #aaaaaa;
+        border-style: solid;
+        height: 255px; }
+        body .container-fluid .clients .carousel .owl1 .plaine img.log {
+          width: 200px; }
+        body .container-fluid .clients .carousel .owl1 .plaine img.play {
+          width: 175px; }
+        body .container-fluid .clients .carousel .owl1 .plaine .text {
+          padding-left: 25px;
+          text-align: left;
+          font-family: 'Oswald-Light';
           font-size: 22px;
           color: #303030; }
+          body .container-fluid .clients .carousel .owl1 .plaine .text b {
+            font-family: 'Oswald-Medium';
+            font-size: 22px;
+            color: #303030; }
   body .container-fluid .partners {
     background-image: url(../img/partners-bg.jpg);
     -webkit-background-size: cover;
@@ -694,12 +731,13 @@ body {
     padding-bottom: 100px; }
     body .container-fluid .partners .head {
       margin-top: 0; }
-    body .container-fluid .partners .owl2 img {
-      margin-bottom: 25px;
-      margin-left: 15px;
-      margin-right: 15px;
-      -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2);
-              box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2); }
+    body .container-fluid .partners .carousel {
+      position: relative; }
+      body .container-fluid .partners .carousel .owl2 .elem {
+        padding: 20px; }
+        body .container-fluid .partners .carousel .owl2 .elem img {
+          -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2);
+                  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.2); }
   body .container-fluid .req {
     text-align: center;
     padding-top: 100px;
