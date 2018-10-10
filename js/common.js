@@ -1,27 +1,20 @@
-$(document).ready(function(){                                                 
-
-    $('.hideB').hide();
-    $a = $('.visB');
-    $a.on('click', function(event) {
-        event.preventDefault();
-        $a.not(this).next().slideUp(500);
-        $(this).next().slideToggle(500);
-        $a.not(this).parent('.punct').css("background-color", 'rgb(246, 246, 246)');
-        if ($(this).parent('.punct').css("background-color") == 'rgb(246, 246, 246)') {
-            $(this).parent('.punct').css("background-color", "transparent");
-        }else
-            $(this).parent('.punct').css("background-color", 'rgb(246, 246, 246)');
-    });
-
+                                              
+$('.hideB').hide();
+$a = $('.visB');
+$a.on('click', function(event) {
+    event.preventDefault();
+    $a.not(this).next().slideUp(500);
+    $(this).next().slideToggle(500);
+    $a.not(this).parent('.punct').css("background-color", 'rgb(246, 246, 246)');
+    if ($(this).parent('.punct').css("background-color") == 'rgb(246, 246, 246)') {
+        $(this).parent('.punct').css("background-color", "transparent");
+    }else
+        $(this).parent('.punct').css("background-color", 'rgb(246, 246, 246)');
 });
 
-$('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
-    var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
-        }
-        return false; // выключаем стандартное действие
-});
+function scrTo(id){
+    $.scrollTo(id, 1000);
+};                                         
 $('.report').click(function() {
     $('.popup1').bPopup({
         position: ['50%', '50%'],
@@ -75,3 +68,40 @@ $('#dot4').click(function () {
     $('.owl1').trigger('to.owl.carousel', [3, 500])
 })
 
+
+$(".fofm").submit(function() {
+    var str = $(this).serialize();
+    $.ajax({
+        type: "POST",
+        url: "contact.php",
+        data: str,
+        success: function(msg) {
+            if(msg == 'ok') {
+                $('#formPopupDone').bPopup({
+                    position: ['50%', '50%'],
+                    positionStyle: 'fixed'
+                });
+            }
+            else {
+                $('#formPopupError').bPopup({
+                    position: ['50%', '50%'],
+                    positionStyle: 'fixed'
+                });
+            }
+        }
+    });
+    return false;
+});
+
+$(function($) {
+    $.mask.definitions['9'] = '';
+    $.mask.definitions['n'] = '[0-9]';
+    $('input[type="tel"]').mask("+49 (0nn) nnnn-nnnn");
+});
+
+$('.button-done').click(function() {
+    $('.cookie-block').css('display', 'none');
+});
+$('.button-no').click(function() {
+    $('.cookie-block').css('display', 'none');
+});

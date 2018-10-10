@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <title>GPS-Tracking - Übersetzung from Ewald</title>
@@ -21,12 +21,19 @@
     <link rel="icon" sizes="72x72" type="image/png" href="img/fav/ws_72x72.png">
     <link rel="icon" sizes="114x114" type="image/png" href="img/fav/ws_114x114.png">
     <link rel="icon" type="image/x-icon" href="img/fav/ws_48x48.ico">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
+    <div class="cookie-block"><span>We Use Cookies on this site to enhance your user experience</span>
+      <div class="button-done">Ok, i agree</div>
+      <div class="button-no">No, give me more info</div>
+    </div>
+    <div class="formPopupDone" id="formPopupDone"><span>Vielen Dank! </br>Wir werden uns bald bei Ihnen melden.</span></div>
+    <div class="formPopupError" id="formPopupError"><span>Füllen Sie die Felder aus</span></div>
     <div class="container-fluid">
-      <header>
+      <header id="header">
         <div class="top-line">
-          <div class="container"><a href="#wFace">Beliebte Funktionen</a><a href="#wGet">Einsparungen berechnen </a><a href="#trySystem">Das Prinzip des Systems</a><a href="#popFeatures">Berichtsbeispiele</a><a href="#dataCol">Häufig gestellte Fragen</a><a href="#test">Interessante Fakten</a><a href="#princeOp">Unsere Vorteile</a><a href="#reports">Kundenergebnisse</a><a href="#app">Unsere Kunden</a><a href="#qq">Kontakte</a></div>
+          <div class="container"><span onclick="scrTo('#wFace');">Beliebte Funktionen</span><span onclick="scrTo('#wGet');">Einsparungen berechnen </span><span onclick="scrTo('#trySystem');">Das Prinzip des Systems</span><span onclick="scrTo('#popFeatures');">Berichtsbeispiele</span><span onclick="scrTo('#dataCol');">Häufig gestellte Fragen</span><span onclick="scrTo('#test');">Interessante Fakten</span><span onclick="scrTo('#princeOp');">Unsere Vorteile</span><span onclick="scrTo('#reports');">Kundenergebnisse</span><span onclick="scrTo('#app');">Unsere Kunden</span><span onclick="scrTo('#qq');">Kontakte</span></div>
         </div>
         <div class="inf">
           <div class="container d-flex align-items-center"><img class="logo" src="img/logo.png" alt="logo">
@@ -159,14 +166,16 @@
                 </div>
               </div>
               <div class="col col-5">
-                <form>
+                <form class="fofm">
                   <div class="head"><b>Testen Sie das "MonitoringAuto" </br>-System kostenlos!</b></div>
-                  <input type="text" placeholder="Name">
-                  <input type="email" placeholder="E-Mail">
-                  <input type="text" placeholder="Telefon">
-                  <div class="done"><img src="img/done-arrow.png" alt="img/done-arrow.png"><span>Ich stimme der Datenverarbeitung zu</span></div>
-                  <div class="kapcha">Место для каптчи</div>
-                  <div class="btn-blue d-flex align-items-center justify-content-center"><span>Anmelden</span></div>
+                  <input type="text" placeholder="Name" name="nme" required>
+                  <input type="email" placeholder="E-Mail" name="email" required>
+                  <input type="tel" placeholder="Telefon" name="tel" required>
+                  <div class="done">
+                    <input type="checkbox"><span>Ich stimme der Datenverarbeitung zu</span>
+                  </div>
+                  <div class="kapcha g-recaptcha" data-sitekey="6LcqXHQUAAAAACqa2UbtY59LXz0QAP0eYEiPl6VJ"></div>
+                  <button class="btn-blue d-flex align-items-center justify-content-center" type="submit"><span>Anmelden</span></button>
                 </form>
               </div>
             </div>
@@ -245,18 +254,18 @@
       <section class="test" id="test">
         <h2>Testen Sie die Software kostenlos!</h2><span class="desc">Alle unsere Geräte können Sie 10 Tage lang kostenlos testen</span>
         <div class="container">
-          <form class="row">
+          <form class="row fofm">
             <div class="col-3">
-              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Name" name="nme" required>
             </div>
             <div class="col-3">
-              <input type="text" placeholder="Telefon">
+              <input type="tel" placeholder="Telefon" name="tel" required>
             </div>
             <div class="col-3">
-              <input type="email" placeholder="E-Mail">
+              <input type="email" placeholder="E-Mail" name="email" required>
             </div>
             <div class="col-3">
-              <div class="btn-blue d-flex align-items-center justify-content-center"><span>BESTELLEN</span></div>
+              <button class="btn-blue d-flex align-items-center justify-content-center" type="submit"><span>BESTELLEN</span></button>
             </div>
           </form>
         </div>
@@ -451,13 +460,11 @@
       </section>
       <section class="kontakt" id="kontakt">
         <h2><b>Es gibt Fragen</b> - lassen Sie eine Anfrage und wir werden Sie kontaktieren!</h2>
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Telefon">
+        <form class="fofm">
+          <input type="text" placeholder="Name" name="nme" required>
+          <input type="tel" placeholder="Telefon" name="tel" required>
+          <button class="btn-blue d-flex align-items-center justify-content-center" type="submit"><span>SENDEN</span></button>
         </form>
-        <div class="button">
-          <div class="btn-blue d-flex align-items-center justify-content-center"><span>SENDEN</span></div>
-        </div>
       </section>
       <section class="facts" id="facts"><img src="img/facts-bg.png" alt="img/facts-bg.png"></section>
       <section class="advs" id="advs">
@@ -551,13 +558,11 @@
         <div class="head">
           <h2><b>Hinterlassen Sie jetzt eine Anfrage!</b></h2><span class="desc">Kontrollieren Sie die Fahrzeugflotte per Satellit und senken Sie ihre Fuhrparkkosten um bis zu 30%!</span>
         </div>
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Telefon">
+        <form class="fofm">
+          <input type="text" placeholder="Name" name="nme" required>
+          <input type="tel" placeholder="Telefon" name="tel" required>
+          <button class="btn-blue d-flex align-items-center justify-content-center" type="submit"><span>SENDEN</span></button>
         </form>
-        <div class="button">
-          <div class="btn-blue d-flex align-items-center justify-content-center"><span>SENDEN</span></div>
-        </div>
       </section>
       <section class="geo" id="geo"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145814.0094637245!2d8.63248374323395!3d50.13584003751281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd09dfdb2f8fd3%3A0xb766556a1854f911!2zTWVyZ2VudGhhbGVyYWxsZWUgNzcsIDY1NzYwIEVzY2hib3JuLCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1539113366090" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container">
@@ -575,10 +580,10 @@
         <div class="container">
           <div class="row">
             <div class="col col-3"><img class="logo" src="img/logo-footer.png" alt="img/logo-footer.png"></div>
-            <div class="col col-2"><span>Zuhause</span><br><span>Welches Gesicht</span><br><span>Was du bekommst</span><br><span>Beliebte Funktionen</span><br><span>Einsparungen berechnen</span></div>
-            <div class="col col-2"><span>Das Prinzip des Systems</span><br><span class="under">Berichtsbeispiele</span><br><span>Anwendung und Analyse</span><br><span>Häufig gestellte Fragen</span><br><span>Interessante Fakten</span></div>
-            <div class="col col-2"><span>Unsere Vorteile</span><br><span>Kundenergebnisse</span><br><span>Unsere Kunden</span><br><span>Kontakte</span></div>
-            <div class="col col-1"><img class="arrow" src="img/up-arrow.svg" alt="img/up-arrow.svg"></div>
+            <div class="col col-2"><span onclick="scrTo('#header');">Zuhause</span><br><span onclick="scrTo('#wFace');">Welches Gesicht</span><br><span onclick="scrTo('#wGet');">Was du bekommst</span><br><span onclick="scrTo('#trySystem');">Beliebte Funktionen</span><br><span onclick="scrTo('#popFeatures');">Einsparungen berechnen</span></div>
+            <div class="col col-2"><span onclick="scrTo('#dataCol');">Das Prinzip des Systems</span><br><span class="under" onclick="scrTo('#test');">Berichtsbeispiele</span><br><span onclick="scrTo('#princeOp');">Anwendung und Analyse</span><br><span onclick="scrTo('#reports');">Häufig gestellte Fragen</span><br><span onclick="scrTo('#app');">Interessante Fakten</span></div>
+            <div class="col col-2"><span onclick="scrTo('#qq');">Unsere Vorteile</span><br><span onclick="scrTo('#kontakt');">Kundenergebnisse</span><br><span onclick="scrTo('#facts');">Unsere Kunden</span><br><span onclick="scrTo('#advs');">Kontakte</span></div>
+            <div class="col col-1"><img class="arrow" onclick="scrTo('#header');" src="img/up-arrow.svg" alt="img/up-arrow.svg"></div>
             <div class="col col-2">
               <div class="contact ml-auto">
                 <div class="phone"><span>+49<b>619 6776 9169</b></span></div>
@@ -597,5 +602,7 @@
   <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   <script src="libs/bpopup.js"></script>
+  <script src="libs/jquery.maskedinput.min.js"></script>
+  <script src="libs/jquery.scrollTo.min.js"></script>
   <script src="js/common.js"></script>
 </html>

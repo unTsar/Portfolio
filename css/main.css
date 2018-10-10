@@ -75,7 +75,10 @@ button:focus,
 input,
 input:active,
 input:focus {
-  outline: none; }
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: 0; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -145,6 +148,48 @@ body {
   margin: 0;
   padding: 0;
   text-align: left; }
+  body .cookie-block {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 0;
+    background-color: #087AC0;
+    z-index: 999;
+    padding-left: 50px; }
+    body .cookie-block span {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: 'Oswald-Medium';
+      color: white; }
+    body .cookie-block .button-done, body .cookie-block .button-no {
+      margin-left: 15px;
+      margin-right: 15px;
+      font-family: 'Oswald-Medium';
+      color: black;
+      font-size: 20px;
+      background-color: white;
+      height: 50px;
+      line-height: 50px;
+      cursor: pointer; }
+    body .cookie-block .button-done, body .cookie-block .button-no, body .cookie-block span {
+      display: inline-block;
+      vertical-align: middle; }
+  body .formPopupDone, body .formPopupError {
+    display: none;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    padding-top: 75px;
+    background-color: white;
+    text-align: center; }
   body .popup2 {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -178,7 +223,8 @@ body {
     color: white;
     background-color: #8DBEDD;
     height: 30px; }
-    body .container-fluid header .top-line a, body .container-fluid header .top-line a:visited, body .container-fluid header .top-line a:hover, body .container-fluid header .top-line a:focus, body .container-fluid header .top-line a:active, body .container-fluid header .top-line a:required {
+    body .container-fluid header .top-line span {
+      cursor: pointer;
       text-decoration: none;
       margin-right: 10px;
       color: white; }
@@ -427,24 +473,18 @@ body {
               font-size: 16px;
               color: #303030;
               margin-left: 15px; }
+              body .container-fluid .trySystem .container .offer .row .col-5 form .done input {
+                width: auto;
+                height: auto;
+                margin: 0; }
               body .container-fluid .trySystem .container .offer .row .col-5 form .done span {
                 margin-left: 5px; }
-              body .container-fluid .trySystem .container .offer .row .col-5 form .done img, body .container-fluid .trySystem .container .offer .row .col-5 form .done span {
+              body .container-fluid .trySystem .container .offer .row .col-5 form .done input, body .container-fluid .trySystem .container .offer .row .col-5 form .done span {
                 display: inline-block;
                 vertical-align: middle; }
             body .container-fluid .trySystem .container .offer .row .col-5 form .kapcha {
-              font-family: 'Oswald-Medium';
-              font-size: 20px;
-              color: black;
-              text-align: center;
               margin-top: 10px;
-              margin-bottom: 10px;
-              border-width: 1px;
-              border-color: #055a9b;
-              border-style: solid;
-              background-color: white;
-              width: 275px;
-              height: 55px; }
+              margin-bottom: 10px; }
   body .container-fluid .popFeatures .head {
     margin-bottom: 50px; }
   body .container-fluid .popFeatures .row {
@@ -523,6 +563,7 @@ body {
     body .container-fluid .reports .container .row {
       margin-bottom: 30px; }
       body .container-fluid .reports .container .row .report {
+        cursor: pointer;
         padding-right: 10px;
         text-align: center;
         background-color: white;
@@ -622,24 +663,33 @@ body {
         font-family: 'Oswald-Bold';
         font-size: 28px;
         color: white; }
-    body .container-fluid .kontakt .button {
-      margin-left: 25px; }
-    body .container-fluid .kontakt form, body .container-fluid .kontakt .button {
-      display: inline-block;
-      vertical-align: top; }
-    body .container-fluid .kontakt form input {
-      padding-left: 35px;
-      background-color: transparent;
-      border-width: 1px;
-      border-color: white;
-      border-style: solid;
-      width: 260px;
-      height: 60px; }
-    body .container-fluid .kontakt form input, body .container-fluid .kontakt form input::-webkit-input-placeholder {
-      color: white;
-      font-family: 'Oswald-Light';
-      font-size: 20px;
-      margin-left: 25px; }
+    body .container-fluid .kontakt form {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      body .container-fluid .kontakt form button {
+        margin-left: 25px; }
+      body .container-fluid .kontakt form input {
+        padding-left: 35px;
+        background-color: transparent;
+        border-width: 1px;
+        border-color: white;
+        border-style: solid;
+        width: 260px;
+        height: 60px; }
+      body .container-fluid .kontakt form input, body .container-fluid .kontakt form input::-webkit-input-placeholder {
+        color: white;
+        font-family: 'Oswald-Light';
+        font-size: 20px;
+        margin-left: 25px; }
   body .container-fluid .facts {
     text-align: center;
     padding-top: 50px;
@@ -745,6 +795,7 @@ body {
         body .container-fluid .clients .carousel .owl1 .plaine img.log {
           width: 200px; }
         body .container-fluid .clients .carousel .owl1 .plaine img.play {
+          cursor: pointer;
           width: 175px; }
         body .container-fluid .clients .carousel .owl1 .plaine .text {
           padding-left: 25px;
@@ -798,22 +849,33 @@ body {
         color: white; }
     body .container-fluid .req .button {
       margin-left: 25px; }
-    body .container-fluid .req form, body .container-fluid .req .button {
-      display: inline-block;
-      vertical-align: top; }
-    body .container-fluid .req form input {
-      padding-left: 35px;
-      background-color: transparent;
-      border-width: 1px;
-      border-color: white;
-      border-style: solid;
-      width: 260px;
-      height: 60px; }
-    body .container-fluid .req form input, body .container-fluid .req form input::-webkit-input-placeholder {
-      color: white;
-      font-family: 'Oswald-Light';
-      font-size: 20px;
-      margin-left: 25px; }
+    body .container-fluid .req form {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      body .container-fluid .req form button {
+        margin-left: 25px; }
+      body .container-fluid .req form input {
+        padding-left: 35px;
+        background-color: transparent;
+        border-width: 1px;
+        border-color: white;
+        border-style: solid;
+        width: 260px;
+        height: 60px; }
+      body .container-fluid .req form input, body .container-fluid .req form input::-webkit-input-placeholder {
+        color: white;
+        font-family: 'Oswald-Light';
+        font-size: 20px;
+        margin-left: 25px; }
   body .container-fluid .geo {
     height: 500px;
     position: relative; }
@@ -889,6 +951,8 @@ body {
           width: 35px;
           cursor: pointer;
           margin-left: 5px; }
+        body .container-fluid footer .row .col span {
+          cursor: pointer; }
         body .container-fluid footer .row .col span.under {
           text-decoration: underline; }
         body .container-fluid footer .row .col .contact {
@@ -897,6 +961,7 @@ body {
           body .container-fluid footer .row .col .contact .phone {
             line-height: 1; }
             body .container-fluid footer .row .col .contact .phone span {
+              cursor: auto;
               font-size: 24px;
               font-family: 'Oswald-Light'; }
               body .container-fluid footer .row .col .contact .phone span b {
