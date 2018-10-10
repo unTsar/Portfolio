@@ -544,6 +544,14 @@ body {
         color: white;
         font-family: 'Oswald-Light';
         font-size: 20px; }
+      body .container-fluid .test form .check {
+        margin-top: 15px; }
+        body .container-fluid .test form .check .done input {
+          width: auto;
+          height: auto; }
+        body .container-fluid .test form .check .done span {
+          color: white;
+          margin-left: 5px; }
   body .container-fluid .princeOp {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -664,32 +672,33 @@ body {
         font-size: 28px;
         color: white; }
     body .container-fluid .kontakt form {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      body .container-fluid .kontakt form button {
-        margin-left: 25px; }
-      body .container-fluid .kontakt form input {
-        padding-left: 35px;
-        background-color: transparent;
-        border-width: 1px;
-        border-color: white;
-        border-style: solid;
-        width: 260px;
-        height: 60px; }
-      body .container-fluid .kontakt form input, body .container-fluid .kontakt form input::-webkit-input-placeholder {
-        color: white;
-        font-family: 'Oswald-Light';
-        font-size: 20px;
-        margin-left: 25px; }
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr; }
+      body .container-fluid .kontakt form .forms {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr; }
+        body .container-fluid .kontakt form .forms input {
+          padding-left: 35px;
+          background-color: transparent;
+          border-width: 1px;
+          border-color: white;
+          border-style: solid;
+          width: 260px;
+          height: 60px; }
+        body .container-fluid .kontakt form .forms input, body .container-fluid .kontakt form .forms input::-webkit-input-placeholder {
+          color: white;
+          font-family: 'Oswald-Light';
+          font-size: 20px; }
+      body .container-fluid .kontakt form .done {
+        margin-top: 15px; }
+        body .container-fluid .kontakt form .done input {
+          width: auto;
+          height: auto; }
+        body .container-fluid .kontakt form .done span {
+          color: white;
+          margin-left: 5px; }
   body .container-fluid .facts {
     text-align: center;
     padding-top: 50px;
@@ -850,32 +859,33 @@ body {
     body .container-fluid .req .button {
       margin-left: 25px; }
     body .container-fluid .req form {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      body .container-fluid .req form button {
-        margin-left: 25px; }
-      body .container-fluid .req form input {
-        padding-left: 35px;
-        background-color: transparent;
-        border-width: 1px;
-        border-color: white;
-        border-style: solid;
-        width: 260px;
-        height: 60px; }
-      body .container-fluid .req form input, body .container-fluid .req form input::-webkit-input-placeholder {
-        color: white;
-        font-family: 'Oswald-Light';
-        font-size: 20px;
-        margin-left: 25px; }
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center; }
+      body .container-fluid .req form .forms {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr; }
+        body .container-fluid .req form .forms input {
+          padding-left: 35px;
+          background-color: transparent;
+          border-width: 1px;
+          border-color: white;
+          border-style: solid;
+          width: 260px;
+          height: 60px; }
+        body .container-fluid .req form .forms input, body .container-fluid .req form .forms input::-webkit-input-placeholder {
+          color: white;
+          font-family: 'Oswald-Light';
+          font-size: 20px; }
+      body .container-fluid .req form .done {
+        margin-top: 15px; }
+        body .container-fluid .req form .done input {
+          width: auto;
+          height: auto; }
+        body .container-fluid .req form .done span {
+          color: white;
+          margin-left: 5px; }
   body .container-fluid .geo {
     height: 500px;
     position: relative; }
