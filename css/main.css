@@ -145,6 +145,7 @@ body {
   position: relative;
   line-height: 1.65;
   overflow-x: hidden;
+  overflow-wrap: break-word;
   margin: 0;
   padding: 0;
   text-align: left; }
@@ -167,6 +168,8 @@ body {
       font-size: 20px;
       font-family: 'Oswald-Medium';
       color: white; }
+    body .cookie-block a {
+      text-decoration: none; }
     body .cookie-block .button-done, body .cookie-block .button-no {
       margin-left: 15px;
       margin-right: 15px;
@@ -208,29 +211,30 @@ body {
     background-color: white;
     -webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
-    width: 500px;
-    height: 500px; }
+    width: 50%;
+    padding-bottom: 50px; }
     body .popup1 img {
-      width: 500px; }
+      width: 100%; }
     body .popup1 .title {
       margin-top: 20px;
-      margin-left: 15px;
       font-family: 'Oswald-Medium';
       font-size: 16px;
       color: #303030; }
   body .container-fluid header .top-line {
+    padding-bottom: 5px;
     font-family: 'Oswald-Light';
     color: white;
-    background-color: #8DBEDD;
-    height: 30px; }
+    background-color: #8DBEDD; }
     body .container-fluid header .top-line span {
       cursor: pointer;
       text-decoration: none;
       margin-right: 10px;
+      margin-bottom: 5px;
       color: white; }
   body .container-fluid header .inf {
     background-color: white;
-    height: 88px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.08); }
     body .container-fluid header .inf .contact {
@@ -242,6 +246,8 @@ body {
         width: 20px;
         margin-left: 10px;
         cursor: pointer; }
+      body .container-fluid header .inf .contact .contacts a {
+        outline: none; }
       body .container-fluid header .inf .contact .phone {
         line-height: 1; }
         body .container-fluid header .inf .contact .phone span {
@@ -285,7 +291,7 @@ body {
               box-shadow: 0px 17px 37px 0px rgba(0, 0, 0, 0.38);
       position: relative;
       width: 800px;
-      height: 505px;
+      padding-bottom: 50px;
       margin-top: 75px;
       margin-bottom: 75px; }
       body .container-fluid header .content .offer .sat {
@@ -310,7 +316,6 @@ body {
         margin-right: 15px;
         margin-top: 15px;
         margin-bottom: 15px;
-        line-height: 2.5;
         padding-left: 20px;
         text-transform: none;
         font-family: 'Oswald-Light';
@@ -321,20 +326,20 @@ body {
           font-family: 'Oswald-SemiBold'; }
         body .container-fluid header .content .offer ul li {
           padding-left: 15px;
+          margin-top: 25px;
+          margin-bottom: 25px;
           list-style-image: url(../img/location-sign.png); }
   body .container-fluid .wFace .row {
     margin: 0;
     margin-top: 35px; }
     body .container-fluid .wFace .row .bg {
-      padding-top: 25px;
-      padding-bottom: 25px; }
+      padding: 25px; }
       body .container-fluid .wFace .row .bg .content {
         padding-left: 25px;
         padding-right: 25px;
         border-width: 2px;
         border-color: #dadada;
         border-style: solid;
-        width: 500px;
         height: 125px; }
         body .container-fluid .wFace .row .bg .content span {
           font-size: 24px;
@@ -383,6 +388,7 @@ body {
         vertical-align: middle; }
       body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
         text-transform: uppercase;
+        margin-bottom: 0;
         font-family: 'Oswald-Bold';
         font-size: 30px;
         color: #393a37; }
@@ -401,23 +407,32 @@ body {
             background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 100px; }
-    body .container-fluid .wGet .merits .col {
-      text-align: left; }
-      body .container-fluid .wGet .merits .col img {
-        height: 45px;
-        margin-top: 10px;
-        margin-left: 10px; }
-      body .container-fluid .wGet .merits .col .text {
-        margin-left: 30px; }
-        body .container-fluid .wGet .merits .col .text .title {
-          font-family: 'Oswald-Bold';
-          font-size: 22px;
-          color: #d30d2e;
-          text-transform: uppercase; }
-        body .container-fluid .wGet .merits .col .text .desc {
-          font-family: 'Oswald-Light';
-          font-size: 20px;
-          color: #303030; }
+    body .container-fluid .wGet .merits .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      body .container-fluid .wGet .merits .container .col {
+        margin-bottom: 50px;
+        text-align: left; }
+        body .container-fluid .wGet .merits .container .col img {
+          height: 45px;
+          margin-top: 10px;
+          margin-left: 10px; }
+        body .container-fluid .wGet .merits .container .col .text {
+          margin-left: 30px; }
+          body .container-fluid .wGet .merits .container .col .text .title {
+            font-family: 'Oswald-Bold';
+            font-size: 22px;
+            color: #d30d2e;
+            text-transform: uppercase; }
+          body .container-fluid .wGet .merits .container .col .text .desc {
+            font-family: 'Oswald-Light';
+            font-size: 20px;
+            color: #303030; }
   body .container-fluid .trySystem {
     background-image: url(../img/trySystem-bg.jpg);
     -webkit-background-size: cover;
@@ -442,18 +457,18 @@ body {
             color: #303030; }
             body .container-fluid .trySystem .container .offer .row .head b {
               color: #d30d2e; }
-          body .container-fluid .trySystem .container .offer .row .col-7 .desc {
+          body .container-fluid .trySystem .container .offer .row .col1 .desc {
             font-family: 'Oswald-Light';
             font-size: 22px;
             color: #303030;
             margin: 35px 0; }
-          body .container-fluid .trySystem .container .offer .row .col-7 p {
+          body .container-fluid .trySystem .container .offer .row .col1 p {
             margin: 15px 0; }
-          body .container-fluid .trySystem .container .offer .row .col-5 form {
+          body .container-fluid .trySystem .container .offer .row .col2 form {
             margin-bottom: 15px; }
-            body .container-fluid .trySystem .container .offer .row .col-5 form .head {
+            body .container-fluid .trySystem .container .offer .row .col2 form .head {
               margin-bottom: 30px; }
-            body .container-fluid .trySystem .container .offer .row .col-5 form input {
+            body .container-fluid .trySystem .container .offer .row .col2 form input {
               font-family: 'Oswald-Light';
               font-size: 20px;
               color: #939393;
@@ -462,48 +477,60 @@ body {
               border-width: 1px;
               border-color: #055a9b;
               border-style: solid;
-              width: 275px;
+              width: 100%;
               height: 55px; }
-            body .container-fluid .trySystem .container .offer .row .col-5 form input::-webkit-input-placeholder {
+            body .container-fluid .trySystem .container .offer .row .col2 form input::-webkit-input-placeholder {
               font-family: 'Oswald-Light';
               font-size: 20px;
               color: #939393; }
-            body .container-fluid .trySystem .container .offer .row .col-5 form .done {
+            body .container-fluid .trySystem .container .offer .row .col2 form .done {
               font-family: 'Oswald-Light';
               font-size: 16px;
               color: #303030;
               margin-left: 15px; }
-              body .container-fluid .trySystem .container .offer .row .col-5 form .done input {
+              body .container-fluid .trySystem .container .offer .row .col2 form .done input {
                 width: auto;
                 height: auto;
                 margin: 0; }
-              body .container-fluid .trySystem .container .offer .row .col-5 form .done span {
+              body .container-fluid .trySystem .container .offer .row .col2 form .done span {
                 margin-left: 5px; }
-              body .container-fluid .trySystem .container .offer .row .col-5 form .done input, body .container-fluid .trySystem .container .offer .row .col-5 form .done span {
+              body .container-fluid .trySystem .container .offer .row .col2 form .done input, body .container-fluid .trySystem .container .offer .row .col2 form .done span {
                 display: inline-block;
                 vertical-align: middle; }
-            body .container-fluid .trySystem .container .offer .row .col-5 form .kapcha {
+            body .container-fluid .trySystem .container .offer .row .col2 form .kapcha {
               margin-top: 10px;
               margin-bottom: 10px; }
   body .container-fluid .popFeatures .head {
     margin-bottom: 50px; }
-  body .container-fluid .popFeatures .row {
-    margin-bottom: 30px; }
-    body .container-fluid .popFeatures .row .block {
-      padding-right: 10px;
+  body .container-fluid .popFeatures .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    body .container-fluid .popFeatures .container .block {
       text-align: left;
       background-color: white;
       -webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
               box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
-      height: 625px; }
-      body .container-fluid .popFeatures .row .block .title {
+      height: 625px;
+      margin-bottom: 30px; }
+      body .container-fluid .popFeatures .container .block img {
+        width: 100%; }
+      body .container-fluid .popFeatures .container .block .title {
         text-transform: uppercase;
         margin-top: 20px;
         margin-left: 15px;
         font-family: 'Oswald-Medium';
         font-size: 22px;
         color: #d30d2e; }
-      body .container-fluid .popFeatures .row .block .desc {
+      body .container-fluid .popFeatures .container .block .desc {
+        padding-right: 10px;
         margin-left: 15px;
         font-family: 'Oswald-Light';
         font-size: 20px;
@@ -512,6 +539,8 @@ body {
     padding-bottom: 100px; }
     body .container-fluid .dataCol .head {
       margin-bottom: 70px; }
+    body .container-fluid .dataCol .container img {
+      width: 100%; }
   body .container-fluid .test {
     background-image: url(../img/test-bg.jpg);
     -webkit-background-size: cover;
@@ -532,6 +561,17 @@ body {
     body .container-fluid .test form {
       margin-top: 25px;
       margin-bottom: 100px; }
+      body .container-fluid .test form .col-12 {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+      body .container-fluid .test form .done {
+        margin-top: 15px; }
+        body .container-fluid .test form .done input {
+          width: auto;
+          height: auto; }
+        body .container-fluid .test form .done span {
+          color: white;
+          margin-left: 5px; }
       body .container-fluid .test form input {
         padding-left: 40px;
         border-width: 1px;
@@ -540,18 +580,10 @@ body {
         border-style: solid;
         width: 100%;
         height: 60px; }
-      body .container-fluid .test form input, body .container-fluid .test form input::-webkit-input-placeholder {
+      body .container-fluid .test form input:focus, body .container-fluid .test form input, body .container-fluid .test form input::-webkit-input-placeholder {
         color: white;
         font-family: 'Oswald-Light';
         font-size: 20px; }
-      body .container-fluid .test form .check {
-        margin-top: 15px; }
-        body .container-fluid .test form .check .done input {
-          width: auto;
-          height: auto; }
-        body .container-fluid .test form .check .done span {
-          color: white;
-          margin-left: 5px; }
   body .container-fluid .princeOp {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -568,23 +600,34 @@ body {
         color: #303030; }
   body .container-fluid .reports {
     padding-bottom: 100px; }
-    body .container-fluid .reports .container .row {
-      margin-bottom: 30px; }
-      body .container-fluid .reports .container .row .report {
+    body .container-fluid .reports .container {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      body .container-fluid .reports .container .report {
+        margin: 0 auto;
+        margin-bottom: 30px;
         cursor: pointer;
-        padding-right: 10px;
         text-align: center;
         background-color: white;
         -webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
                 box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
         width: 265px;
         height: 235px; }
-        body .container-fluid .reports .container .row .report .title {
+        body .container-fluid .reports .container .report .title {
           margin-top: 20px;
-          margin-left: 15px;
           font-family: 'Oswald-Medium';
           font-size: 16px;
           color: #303030; }
+        body .container-fluid .reports .container .report img {
+          width: 100%; }
   body .container-fluid .app {
     padding-bottom: 100px;
     text-align: center;
@@ -641,7 +684,7 @@ body {
               -ms-flex-item-align: start;
                   align-self: start;
           background-color: #5ca3cf;
-          width: 615px;
+          width: 70%;
           height: 1px;
           margin-left: auto;
           margin-right: auto; }
@@ -680,6 +723,7 @@ body {
         grid-gap: 15px;
         grid-template-columns: 1fr 1fr 1fr; }
         body .container-fluid .kontakt form .forms input {
+          margin: 0 auto;
           padding-left: 35px;
           background-color: transparent;
           border-width: 1px;
@@ -691,18 +735,22 @@ body {
           color: white;
           font-family: 'Oswald-Light';
           font-size: 20px; }
-      body .container-fluid .kontakt form .done {
-        margin-top: 15px; }
-        body .container-fluid .kontakt form .done input {
-          width: auto;
-          height: auto; }
-        body .container-fluid .kontakt form .done span {
-          color: white;
-          margin-left: 5px; }
+        body .container-fluid .kontakt form .forms .done {
+          margin-top: 15px; }
+          body .container-fluid .kontakt form .forms .done input {
+            width: auto;
+            height: auto; }
+          body .container-fluid .kontakt form .forms .done span {
+            color: white;
+            margin-left: 5px; }
   body .container-fluid .facts {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px; }
+    body .container-fluid .facts img {
+      width: 100%;
+      padding-left: 300px;
+      padding-right: 300px; }
   body .container-fluid .advs {
     background-image: url(../img/advs-bg.jpg);
     -webkit-background-size: cover;
@@ -716,12 +764,22 @@ body {
         color: white; }
       body .container-fluid .advs .head .line {
         background-color: white; }
-    body .container-fluid .advs .container .row {
-      margin-top: 50px; }
-      body .container-fluid .advs .container .row .col-3 .plaine, body .container-fluid .advs .container .row .col-4 .plaine {
+    body .container-fluid .advs .container {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      body .container-fluid .advs .container .col .plaine {
+        margin-top: 50px;
         background-color: white;
         padding: 10px; }
-        body .container-fluid .advs .container .row .col-3 .plaine .content, body .container-fluid .advs .container .row .col-4 .plaine .content {
+        body .container-fluid .advs .container .col .plaine .content {
           text-align: left;
           padding-left: 20px;
           display: grid;
@@ -734,25 +792,28 @@ body {
           border-color: #5ca3cf;
           border-style: solid;
           height: 125px; }
-          body .container-fluid .advs .container .row .col-3 .plaine .content img, body .container-fluid .advs .container .row .col-4 .plaine .content img {
+          body .container-fluid .advs .container .col .plaine .content img {
             height: 50px; }
-          body .container-fluid .advs .container .row .col-3 .plaine .content span, body .container-fluid .advs .container .row .col-4 .plaine .content span {
+          body .container-fluid .advs .container .col .plaine .content span {
             padding-left: 30px;
             padding-right: 30px;
             font-family: 'Oswald-Medium';
             font-size: 18px;
             color: #303030; }
-  body .container-fluid .clients .carousel .csl-nav, body .container-fluid .partners .carousel .csl-nav {
-    cursor: pointer;
-    z-index: 11;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute; }
-  body .container-fluid .clients .carousel .csl-prev, body .container-fluid .partners .carousel .csl-prev {
-    left: -60px; }
-  body .container-fluid .clients .carousel .csl-next, body .container-fluid .partners .carousel .csl-next {
-    right: -60px; }
+  body .container-fluid .clients .carousel, body .container-fluid .partners .carousel {
+    width: 80%;
+    margin: 0 auto; }
+    body .container-fluid .clients .carousel .csl-nav, body .container-fluid .partners .carousel .csl-nav {
+      cursor: pointer;
+      z-index: 11;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute; }
+    body .container-fluid .clients .carousel .csl-prev, body .container-fluid .partners .carousel .csl-prev {
+      left: -2.5%; }
+    body .container-fluid .clients .carousel .csl-next, body .container-fluid .partners .carousel .csl-next {
+      right: -2.5%; }
   body .container-fluid .clients {
     padding-bottom: 150px; }
     body .container-fluid .clients .carousel {
@@ -788,7 +849,9 @@ body {
       body .container-fluid .clients .carousel .owl1 .plaine {
         margin-left: 50px;
         margin-right: 50px;
-        padding-right: 25px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        padding-right: 15px;
         padding-left: 30px;
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -799,8 +862,7 @@ body {
         background-color: white;
         border-width: 1px;
         border-color: #aaaaaa;
-        border-style: solid;
-        height: 255px; }
+        border-style: solid; }
         body .container-fluid .clients .carousel .owl1 .plaine img.log {
           width: 200px; }
         body .container-fluid .clients .carousel .owl1 .plaine img.play {
@@ -856,8 +918,6 @@ body {
         font-family: 'Oswald-Regular';
         font-size: 26px;
         color: white; }
-    body .container-fluid .req .button {
-      margin-left: 25px; }
     body .container-fluid .req form {
       display: grid;
       grid-template-columns: 1fr;
@@ -873,19 +933,20 @@ body {
           border-color: white;
           border-style: solid;
           width: 260px;
+          margin: 0 auto;
           height: 60px; }
         body .container-fluid .req form .forms input, body .container-fluid .req form .forms input::-webkit-input-placeholder {
           color: white;
           font-family: 'Oswald-Light';
           font-size: 20px; }
-      body .container-fluid .req form .done {
-        margin-top: 15px; }
-        body .container-fluid .req form .done input {
-          width: auto;
-          height: auto; }
-        body .container-fluid .req form .done span {
-          color: white;
-          margin-left: 5px; }
+        body .container-fluid .req form .forms .done {
+          margin-top: 15px; }
+          body .container-fluid .req form .forms .done input {
+            width: auto;
+            height: auto; }
+          body .container-fluid .req form .forms .done span {
+            color: white;
+            margin-left: 5px; }
   body .container-fluid .geo {
     height: 500px;
     position: relative; }
@@ -944,7 +1005,6 @@ body {
               padding-top: 10px;
               width: 15px; }
   body .container-fluid footer {
-    height: 288px;
     background-color: #373737; }
     body .container-fluid footer .row {
       font-family: 'Oswald-Light';
@@ -955,16 +1015,18 @@ body {
       margin: 0;
       height: 100%; }
       body .container-fluid footer .row .col {
-        padding: 0;
-        line-height: 2.5; }
+        line-height: 1; }
         body .container-fluid footer .row .col img.arrow {
           width: 35px;
           cursor: pointer;
           margin-left: 5px; }
-        body .container-fluid footer .row .col span {
+        body .container-fluid footer .row .col .tLine, body .container-fluid footer .row .col span {
           cursor: pointer; }
-        body .container-fluid footer .row .col span.under {
+        body .container-fluid footer .row .col .tLine.under {
           text-decoration: underline; }
+        body .container-fluid footer .row .col .tLine {
+          margin-top: 5px;
+          margin-bottom: 5px; }
         body .container-fluid footer .row .col .contact {
           margin-top: 10px;
           text-align: right; }
@@ -972,7 +1034,7 @@ body {
             line-height: 1; }
             body .container-fluid footer .row .col .contact .phone span {
               cursor: auto;
-              font-size: 24px;
+              font-size: 22px;
               font-family: 'Oswald-Light'; }
               body .container-fluid footer .row .col .contact .phone span b {
                 margin-left: 5px;
@@ -982,14 +1044,13 @@ body {
             padding: 0;
             margin: 0;
             margin-top: 10px;
-            margin-left: 5px;
             border-width: 1px;
             border-color: #b4b4b4;
             color: #cccccc;
             border-style: solid;
             -webkit-border-radius: 0%;
                     border-radius: 0%;
-            width: 190px;
+            width: 100%;
             height: 25px;
             font-family: 'Oswald-Light';
             -webkit-transition: 0.3s;
@@ -998,9 +1059,230 @@ body {
           body .container-fluid footer .row .col .contact .btn:hover {
             background-color: #cccccc;
             color: #303030; }
+      body .container-fluid footer .row .cLogo {
+        margin-bottom: 25px;
+        text-align: center; }
       body .container-fluid footer .row .logo {
-        margin-left: 15px; }
+        padding-left: 15px;
+        padding-right: 15px; }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px; } }
+
+@media only screen and (max-width: 1200px) {
+  body .container-fluid .app .container h2 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  body .container-fluid .app .container .row img {
+    width: 100%;
+    padding-bottom: 50px; }
+  body .container-fluid .advs .container .col .plaine .content {
+    height: 175px; }
+  body .container-fluid .facts img {
+    padding-left: 200px;
+    padding-right: 200px; }
+  body .container-fluid .clients .carousel .owl1 .plaine {
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 1fr auto; }
+    body .container-fluid .clients .carousel .owl1 .plaine .log {
+      grid-column: 1 / 3;
+      margin-bottom: 15px; }
+    body .container-fluid .clients .carousel .owl1 .plaine .text {
+      justify-self: start; } }
+
+@media only screen and (max-width: 1024px) {
+  body .container-fluid header .top-line {
+    text-align: center; }
+  body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+    font-size: 25px; }
+  body .container-fluid .princeOp img {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+  body .container-fluid .geo .plain {
+    right: 75px;
+    width: 350px;
+    height: 300px; }
+    body .container-fluid .geo .plain .content .desc .punct, body .container-fluid .geo .plain .content .desc span.head {
+      font-size: 20px !important; }
+      body .container-fluid .geo .plain .content .desc .punct span, body .container-fluid .geo .plain .content .desc span.head span {
+        font-size: 20px !important; }
+  body .container-fluid footer .row .col img.arrow, body .container-fluid footer .row .col .contact {
+    margin-top: 25px; }
+  body .container-fluid footer .row .col .contact .btn {
+    width: 200px;
+    margin-left: auto; } }
+
+@media only screen and (max-width: 992px) {
+  body .container-fluid header .content .offer .sat {
+    opacity: 0.5; }
+  body .container-fluid .wFace .row {
+    margin: 0; }
+    body .container-fluid .wFace .row .col-12 {
+      margin-top: 25px;
+      margin-bottom: 25px; }
+  body .container-fluid .trySystem .container {
+    max-width: 100%; }
+  body .container-fluid .clients .carousel .owl1 .plaine {
+    padding: 15px;
+    justify-items: center;
+    grid-template-columns: 1fr; }
+    body .container-fluid .clients .carousel .owl1 .plaine .log {
+      grid-column: 1 / 2; }
+    body .container-fluid .clients .carousel .owl1 .plaine .text, body .container-fluid .clients .carousel .owl1 .plaine .play {
+      margin-bottom: 15px; }
+    body .container-fluid .clients .carousel .owl1 .plaine .text {
+      padding: 0; }
+  body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+    font-size: 20px; }
+  body .container-fluid .kontakt form .forms, body .container-fluid .req form .forms {
+    grid-template-columns: 1fr 1fr; }
+    body .container-fluid .kontakt form .forms .button, body .container-fluid .req form .forms .button {
+      grid-column: 1 / 3; }
+  body .container-fluid .facts img {
+    padding-left: 50px;
+    padding-right: 50px; } }
+
+@media only screen and (max-width: 800px) {
+  body .popup2 {
+    width: auto; }
+    body .popup2 iframe {
+      width: 500px;
+      height: 350px; } }
+
+@media only screen and (max-width: 750px) {
+  body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+    width: 450px; }
+  body .container-fluid .qq .punct .visB {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  body .container-fluid .facts img {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media only screen and (max-width: 600px) {
+  body .popup2 {
+    width: auto; }
+    body .popup2 iframe {
+      width: 350px;
+      height: 250px; }
+  body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+    width: 300px; }
+  body .container-fluid .wGet .merits .container .col .text .title {
+    font-size: 20px; }
+  body .container-fluid .wGet .merits .container .col .text .desc {
+    font-size: 18px; }
+  body .container-fluid .trySystem .container .offer .row .col, body .container-fluid .trySystem .container .offer .kontakt .col {
+    padding-left: 10px;
+    padding-right: 10px; }
+  body .container-fluid .test h2, body .container-fluid .kontakt h2, body .container-fluid .req h2 {
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    body .container-fluid .test h2 b, body .container-fluid .kontakt h2 b, body .container-fluid .req h2 b {
+      font-size: 25px; }
+  body .container-fluid .test span.desc, body .container-fluid .kontakt span.desc, body .container-fluid .req span.desc {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  body .container-fluid .princeOp img {
+    padding-left: 5px;
+    padding-right: 5px; }
+  body .container-fluid .qq .punct .visB, body .container-fluid .qq .punct .hideB {
+    grid-template-columns: 1fr;
+    justify-items: center; }
+    body .container-fluid .qq .punct .visB .blue-line, body .container-fluid .qq .punct .hideB .blue-line {
+      grid-column: 1 / 2; }
+  body .container-fluid .kontakt form .forms, body .container-fluid .req form .forms {
+    grid-template-columns: 1fr; }
+    body .container-fluid .kontakt form .forms .button, body .container-fluid .req form .forms .button {
+      grid-column: 1 / 2; }
+  body .container-fluid .facts img {
+    padding-left: 5px;
+    padding-right: 5px; }
+  body .container-fluid .clients .carousel {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+    body .container-fluid .clients .carousel .csl-prev {
+      left: 0;
+      margin-left: 10px; }
+    body .container-fluid .clients .carousel .csl-next {
+      right: 0;
+      margin-right: 10px; }
+    body .container-fluid .clients .carousel .owl1 .plaine {
+      margin: 0; }
+  body .container-fluid .partners .carousel {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px; }
+    body .container-fluid .partners .carousel .csl-prev {
+      left: 0;
+      margin-left: 10px; }
+    body .container-fluid .partners .carousel .csl-next {
+      right: 0;
+      margin-right: 10px; }
+  body .container-fluid .geo .plain {
+    width: 250px; }
+    body .container-fluid .geo .plain .content .desc {
+      padding-left: 5px; }
+    body .container-fluid .geo .plain .content img.logo {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px; }
+  body .container-fluid footer .col {
+    margin-bottom: 15px; }
+  body .container-fluid footer .col-12 {
+    text-align: center; } }
+
+@media only screen and (max-width: 450px) {
+  body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+    width: 200px; }
+  body .container-fluid .wGet .merits .container .col .text .title {
+    font-size: 17px; } }
+
+@media only screen and (max-width: 400px) {
+  body .popup2 {
+    width: auto; }
+    body .popup2 iframe {
+      width: 250px;
+      height: 150px; }
+  body .container-fluid .wFace .row .bg .content span {
+    font-size: 17px; }
+  body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
+    width: 150px; }
+  body .container-fluid .wGet .merits .container .col img {
+    margin-left: 0; }
+  body .container-fluid .wGet .merits .container .col .text {
+    margin-left: 15px; }
+  body .container-fluid .clients .carousel .owl1 .plaine img.log {
+    width: 100%; }
+  body .container-fluid .geo .plain {
+    right: 25px; } }
+
+@media only screen and (max-width: 575px) {
+  body .cookie-block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding-left: 0px;
+    text-align: center;
+    grid-gap: 15px; }
+    body .cookie-block span {
+      font-size: 18px; }
+  body .container-fluid header .top-line, body .container-fluid header .inf {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; }
+  body .container-fluid header .inf .container {
+    display: block !important; }
+    body .container-fluid header .inf .container .contact {
+      margin-top: 25px;
+      text-align: center; }
+  body .container-fluid header .content .offer h1 {
+    font-size: 30px; }
+  body .container-fluid header .content .offer ul, body .container-fluid header .content .offer h1 {
+    margin: 15px; } }

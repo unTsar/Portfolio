@@ -38,10 +38,25 @@ $('.owl1').owlCarousel({
 var i= 1; $('.owl-dot').each(function(){$(this).find('span').html(i);i++;});
 $('.owl2').owlCarousel({
     nav: false,
+    dots: false,
     loop: true,
     items: 4,
     mouseDrag: false,
-    touchDrag: false
+    touchDrag: false,
+    responsive: {
+        0:{
+            items: 1,
+        },
+        600:{
+            items: 2,
+        },
+        900: {
+            items: 3,
+        },
+        1200: {
+            items: 4,
+        }
+    }
 });
 $('#prev1').click(function () {
     $('.owl1').trigger('prev.owl.carousel', [500]);
@@ -96,7 +111,7 @@ $(".fofm").submit(function() {
 $(function($) {
     $.mask.definitions['9'] = '';
     $.mask.definitions['n'] = '[0-9]';
-    $('input[type="tel"]').mask("+49 (0nn) nnnn-nnnn");
+    $('input[type="tel"]').mask("+49 (nnn) nnnn-nnnn");
 });
 
 $('.button-done').click(function() {
