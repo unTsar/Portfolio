@@ -225,12 +225,25 @@ body {
     font-family: 'Oswald-Light';
     color: white;
     background-color: #8DBEDD; }
-    body .container-fluid header .top-line span {
+    body .container-fluid header .top-line .menu span, body .container-fluid header .top-line .menu-mobile span {
       cursor: pointer;
       text-decoration: none;
       margin-right: 10px;
       margin-bottom: 5px;
       color: white; }
+    body .container-fluid header .top-line .menu-mobile {
+      padding-top: 10px;
+      display: none; }
+      body .container-fluid header .top-line .menu-mobile .visB {
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+        background-color: #FF993E; }
+      body .container-fluid header .top-line .menu-mobile .hideB {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        background-color: #FF993E; }
   body .container-fluid header .inf {
     background-color: white;
     padding-top: 15px;
@@ -518,7 +531,8 @@ body {
       background-color: white;
       -webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
               box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.07);
-      height: 625px;
+      height: 620px;
+      padding-bottom: 15px;
       margin-bottom: 30px; }
       body .container-fluid .popFeatures .container .block img {
         width: 100%; }
@@ -1152,6 +1166,14 @@ body {
       width: 500px;
       height: 350px; } }
 
+@media only screen and (max-width: 767px) {
+  body .container-fluid header .top-line .container .menu {
+    display: none; }
+  body .container-fluid header .top-line .container .menu-mobile {
+    display: block; }
+  body .container-fluid .popFeatures .container .block {
+    height: auto !important; } }
+
 @media only screen and (max-width: 750px) {
   body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
     width: 450px; }
@@ -1238,6 +1260,9 @@ body {
     text-align: center; } }
 
 @media only screen and (max-width: 450px) {
+  body .container-fluid header .content .offer {
+    margin-top: 25px;
+    margin-bottom: 25px; }
   body .container-fluid .wGet .head h2, body .container-fluid .wFace .head h2, body .container-fluid .popFeatures .head h2, body .container-fluid .dataCol .head h2, body .container-fluid .princeOp .head h2, body .container-fluid .reports .head h2, body .container-fluid .qq .head h2, body .container-fluid .advs .head h2, body .container-fluid .clients .head h2, body .container-fluid .partners .head h2 {
     width: 200px; }
   body .container-fluid .wGet .merits .container .col .text .title {
@@ -1283,6 +1308,6 @@ body {
       margin-top: 25px;
       text-align: center; }
   body .container-fluid header .content .offer h1 {
-    font-size: 30px; }
+    font-size: 24px; }
   body .container-fluid header .content .offer ul, body .container-fluid header .content .offer h1 {
     margin: 15px; } }
